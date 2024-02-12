@@ -12,16 +12,18 @@ The dataset sourced from Kaggle provides a diverse collection of text samples in
    The API is developed using FastAPI, a high-performance web framework for building APIs with Python. FastAPI offers asynchronous support, automatic OpenAPI documentation generation, and easy integration with machine learning models.
 
    ### Training Data: 
-    The dataset obtained from Kaggle serves as the primary source of training data for the language detection model. It encompasses a wide range of languages, ensuring the model's robustness across diverse linguistic contexts.
+   The dataset obtained from Kaggle serves as the primary source of training data for the language detection model. It encompasses a wide range of languages, ensuring the model's robustness across diverse linguistic contexts.
 
    ### Preprocessing Pipeline: 
-    A comprehensive preprocessing pipeline is implemented to clean and standardize the text data before model training. This includes tasks such as removing special characters, punctuation, and numerical digits, as well as converting text to lowercase for consistency.
+   A comprehensive preprocessing pipeline is implemented to clean and standardize the text data before model training. This includes tasks such as removing special characters, punctuation, and numerical digits, as well as converting text to lowercase for consistency.
 
-    Model Architecture: The language detection model architecture is designed to effectively capture linguistic patterns and features across different languages. Various machine learning algorithms or neural network architectures may be explored, depending on the requirements and performance metrics of the task.
+   ### Model Architecture: 
+   The language detection model architecture is designed to effectively capture linguistic patterns and features across different languages. Various machine learning algorithms or neural network architectures may be explored, depending on the requirements and performance metrics of the task.
 
-    Usage Examples: The repository includes usage examples and instructions for integrating the language detection model into applications or workflows. This facilitates easy deployment and utilization of the model in real-world scenarios.
+   ### Usage Examples: 
+   The repository includes usage examples and instructions for integrating the language detection model into applications or workflows. This facilitates easy deployment and utilization of the model in real-world scenarios.
 
-Contributions and Feedback:
+## Contributions and Feedback:
 Contributions to the language detection model, such as enhancements to the preprocessing pipeline, optimization of model architecture, or expansion of training data, are welcome via pull requests. Feedback on model performance, usability, and documentation is also appreciated to ensure continuous improvement and refinement of the project.
 
 

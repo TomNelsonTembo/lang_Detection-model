@@ -23,6 +23,30 @@ The dataset sourced from Kaggle provides a diverse collection of text samples in
    ### Usage Examples: 
    The repository includes usage examples and instructions for integrating the language detection model into applications or workflows. This facilitates easy deployment and utilization of the model in real-world scenarios.
 
+
+## HOW TO RUN
+
+### Go to ./LANG_DETECTION_MODEL
+```shell
+~ cd ./LANG_DETECTION_MODEL
+```
+
+### Build container With DOCKER
+```shell
+~ docker build -t <name of docker app> .
+```
+
+### RUN With DOCKER
+Runnning the application will require an open port preferably port 80 on local mapped to 80 on container
+```shell
+~ docker run -p 80:80 lang_dectection_app 
+```
+### VIEW Endpoints
+Go to your browser to URL "0.0.0.0/docs" to view endpoint
+`/` is Home, `/predict` directs you to the endpoint to make the input to the model as string
+
+
+
 ## Contributions and Feedback:
 Contributions to the language detection model, such as enhancements to the preprocessing pipeline, optimization of model architecture, or expansion of training data, are welcome via pull requests. Feedback on model performance, usability, and documentation is also appreciated to ensure continuous improvement and refinement of the project.
 

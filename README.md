@@ -33,13 +33,13 @@ The dataset sourced from Kaggle provides a diverse collection of text samples in
 
 ### Build container With DOCKER
 ```shell
-~ docker build -t <name of docker app> .
+~ docker build -t <name of docker image> .
 ```
 
 ### RUN With DOCKER
 Runnning the application will require an open port preferably port 80 on local mapped to 80 on container
 ```shell
-~ docker run -p 80:80 lang_dectection_app 
+~ docker run -p 80:80 <name of docker image>
 ```
 ### VIEW Endpoints
 Go to your browser to URL "0.0.0.0/docs" to view endpoint

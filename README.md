@@ -51,4 +51,4 @@ Go to your browser to URL "0.0.0.0/docs" to view endpoint
 Contributions to the language detection model, such as enhancements to the preprocessing pipeline, optimization of model architecture, or expansion of training data, are welcome via pull requests. Feedback on model performance, usability, and documentation is also appreciated to ensure continuous improvement and refinement of the project.
 
 
-Please feel free to clone the repository, experiment with the language detection model (.pkl), and contribute to its development!
+Please feel free to clone the repository, experiment with the serialized language detection model (.pkl), and contribute to its development!

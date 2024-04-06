@@ -1,5 +1,5 @@
 # lang_Detetection-model
-Language Detection: A ml for Language Detection
+Language Detection: A ml for Language Detection wrapped with the Python FAST API web framework.
 
 ## Description:
 This Git repository contains a language detection model trained using a dataset obtained from Kaggle. The model is designed to accurately identify the language of text input, with applications ranging from multilingual content analysis to text preprocessing for natural language processing tasks.This repository hosts an API built with FastAPI that provides language detection functionality using a model trained on a dataset obtained from Kaggle. 

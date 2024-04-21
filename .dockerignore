@@ -21,4 +21,4 @@ coverage.xml
 .pytest_cache
 .hypothesis
 .idea
-NoteBook
+./NoteBook

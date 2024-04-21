@@ -29,8 +29,6 @@ classes =["Arabic",
 		  "Tamil", 
 		  "Turkish"]
 
-
-
 def Predict_pipeline(text):
     text = re.sub(r'[!@#$(),\n"%^*?\:;~`0-9]', " ", text)
     text = re.sub(r"[[]]", " ", text)

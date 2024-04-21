@@ -1,7 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
 from pydantic import BaseModel
-from prometheus_client.core import Summary, Counter, Histogram, Gauge
-from prometheus_client import CollectorRegistry
+from prometheus_client import Summary, Counter, Histogram, Gauge
+from prometheus_client.core import CollectorRegistry
+import prometheus_client
 from app.Model.model import Predict_pipeline
 from app.Model.model import __version__ as ModelVersion
 import time
@@ -38,10 +39,10 @@ def predict(payload: TextIn):
     graphs['h'].observe(end - start)
     return {"language": language}
 
-@app.get("/metrics")
+@app.route("/metrics")
 def requests_count():
     res = []
     for k,v in graphs.items():
         res.append(prometheus_client.generate_latest(v))
-    return Reponse(res, mimetype="text/plain")
+    return Response(res, mimetype="text/plain")
 

@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Response
+from flask import Flask, Response, request
 from pydantic import BaseModel
 from prometheus_client import Summary, Counter, Histogram, Gauge
 from prometheus_client.core import CollectorRegistry
@@ -12,7 +12,7 @@ from prometheus_fastapi_instrumentator import Instrumentator
 
 
 
-app = FastAPI(debug=False)
+app = Flask(_name_)
 
 _INF = float("inf")
 
@@ -42,4 +42,10 @@ def predict(payload: TextIn):
     graphs['h'].observe(end - start)
     return {"language": language}
 
-Instrumentator.instrument(app).expose(app)
+
+@app.route("/metrics")
+def requests_count():
+    res = []
+    for k,v in graphs.items():
+        res.append(prometheus_client.generate_latest(v))
+    return Response(res, mimetype="text/plain")
